@@ -11,6 +11,7 @@ namespace Sqlite
     {
         static async Task Main(string[] args)
         {
+            var a = Directory.GetCurrentDirectory();
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile(path: "appsettings.json")
